@@ -1,0 +1,4 @@
+api-plan-mejora/node_modules/
+frontend/node_modules/
+game-card/node_modules/
+.env
