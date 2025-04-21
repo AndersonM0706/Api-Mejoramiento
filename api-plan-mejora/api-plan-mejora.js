@@ -6,7 +6,7 @@ const authController = require('./controllers/authController'); // Importa el co
 const authMiddleware = require('./middleware/authMiddleware'); // Importa el middleware de autenticación
 const cors = require('cors'); // Importa el middleware cors
 
-console.log("Contenido de swaggerSpec:", swaggerSpec);
+console.log("Contenido de swaggerSpec:", swaggerSpec); // AGREGAR ESTA LÍNEA
 
 const studentController = require('./controllers/studentController');
 console.log("Valor de studentController:", studentController); // AGREGADO PARA DEBUGGING

@@ -218,11 +218,6 @@ exports.getStudentInfo = async (req, res) => {
 };
 
 /**
- * @
- * 
- const pool = require('../config/database');
-
-/**
  * @route POST /students/{id}/study
  * @group Students - Operaciones relacionadas con los estudiantes
  * @param {number} id.path.required - ID del estudiante que va a estudiar
