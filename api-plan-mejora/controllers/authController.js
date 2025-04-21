@@ -3,6 +3,16 @@ const pool = require('../config/database'); // Importa tu conexión a la base de
 
 const JWT_SECRET = 'AndMor06'; // ¡NUNCA EN PRODUCCIÓN!
 
+/**
+ * @route POST /login
+ * @group Auth - Operaciones de autenticación
+ * @param {string} username.required - Nombre de usuario
+ * @param {string} password.required - Contraseña
+ * @returns {object} 200 - Token de autenticación
+ * @returns {Error} 401 - Credenciales inválidas
+ * @returns {Error} 500 - Error al autenticar al usuario
+ */
+
 exports.login = async (req, res) => {
     const { username, password } = req.body;
 
